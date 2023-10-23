@@ -68,7 +68,7 @@ function mergeJson(jsonContents) {
 }
 
 function getLevelKeys(jsonContent) {
-  const regex = /(?<!:[\n\r\s]*[{[][\n\r\s]*)"([^"\\]*)"(?=\s*:)/g;
+  const regex = /(?<!:[\n\r\s]*[{[][\s\S]*)"([^"\\]*)"(?=\s*:)/g;
   let regexResult = regex.exec(jsonContent);
   const keys = [];
   while (regexResult) {
