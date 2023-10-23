@@ -4,9 +4,7 @@
   "description": "NPM script that merges translation.*.json files from target directory and creates aggregated translation.*.json files at destination",
   "main": "main.js",
   "bin": "cli.js",
-  "scripts": {
-    "start": "node main.js"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vladimirbelyayev/json-translation-merge.git"
