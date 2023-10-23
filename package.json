@@ -1,0 +1,26 @@
+{
+  "name": "json-translation-merge",
+  "version": "1.0.0",
+  "description": "NPM script that merges translation.*.json files from target directory and creates aggregated translation.*.json files at destination",
+  "main": "main.js",
+  "bin": "cli.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirbelyayev/json-translation-merge.git"
+  },
+  "keywords": [
+    "json",
+    "angular",
+    "translation",
+    "i18n"
+  ],
+  "author": "Vladimir Belyayev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladimirbelyayev/json-translation-merge/issues"
+  },
+  "homepage": "https://github.com/vladimirbelyayev/json-translation-merge#readme"
+}
