@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/vladimirbelyayev/json-translation-merge/issues"
   },
-  "homepage": "https://github.com/vladimirbelyayev/json-translation-merge#readme"
+  "homepage": "https://github.com/vladimirbelyayev/json-translation-merge#readme",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
 }
