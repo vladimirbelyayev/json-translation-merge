@@ -1,7 +1,7 @@
 {
   "name": "json-translation-merge",
   "version": "1.0.4",
-  "description": "NPM script that merges translation.[lang].json files from target directory and creates aggregated translation.[lang].json files at destination",
+  "description": "NPM script that merges JSON translations",
   "main": "main.js",
   "bin": "cli.js",
   "scripts": {},
