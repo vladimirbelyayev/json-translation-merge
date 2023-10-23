@@ -1,7 +1,7 @@
 {
   "name": "json-translation-merge",
-  "version": "1.0.4",
-  "description": "NPM script that merges JSON translations",
+  "version": "1.0.5",
+  "description": "CLI tool that merges JSON translations",
   "main": "main.js",
   "bin": "cli.js",
   "scripts": {},
