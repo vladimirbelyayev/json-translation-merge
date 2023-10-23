@@ -1,6 +1,6 @@
 {
   "name": "json-translation-merge",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "CLI tool that merges JSON translations",
   "main": "main.js",
   "bin": "cli.js",
