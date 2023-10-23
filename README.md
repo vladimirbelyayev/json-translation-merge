@@ -1,6 +1,6 @@
 # json-translation-merge
 
-NPM script that merges translation.[lang].json files from target directory and creates aggregated translation.[lang].json language files at destination.
+NPM script that merges [name].translations.[lang].json files from target directory and creates aggregated [name].translations.[lang].json language files at destination.
 
 ## Usage
 
