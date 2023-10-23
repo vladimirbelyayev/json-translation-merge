@@ -54,20 +54,21 @@ function getLineBreakChar(string) {
 }
 
 function processJsonForMerge(jsonContent) {
-  var lineBreakChar = getLineBreakChar(jsonContent);
   jsonContent = jsonContent.replace("{", "");
-  return jsonContent.substring(0, jsonContent.lastIndexOf(lineBreakChar));
+  jsonContent = jsonContent.substring(0, jsonContent.lastIndexOf("}"));
+  jsonContent = jsonContent.replace(/^[\r\n]+|[\r\n]+$/g, "");
+  return jsonContent;
 }
 
 function mergeJson(jsonContents) {
-  var resultJson = jsonContents.join(",");
-  resultJson = "{" + resultJson + getLineBreakChar(resultJson) + "}";
+  const lineBreakChar = getLineBreakChar(jsonContents);
+  let resultJson = jsonContents.join(`,${lineBreakChar}`);
 
-  return resultJson;
+  return `{${lineBreakChar}${resultJson}${lineBreakChar}}`;
 }
 
 function getLevelKeys(jsonContent) {
-  const regex = /(?<!:[{[][\n\r\s]*)"([^"\\])*"(?=\s*:)/g;
+  const regex = /(?<!:[\n\r\s]*[{[][\n\r\s]*)"([^"\\]*)"(?=\s*:)/g;
   let regexResult = regex.exec(jsonContent);
   const keys = [];
   while (regexResult) {
