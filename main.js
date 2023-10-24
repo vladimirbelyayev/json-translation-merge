@@ -134,7 +134,7 @@ function mergeTranslations(opts) {
     validateMerge(jsonContents);
 
     fs.writeFileSync(
-      path.join(distPath, "translations." + key + ".json"),
+      path.join(distPath, `translations.${expression}.json`),
       mergeJson(jsonContents),
       FILE_ENCODING
     );
