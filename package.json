@@ -4,7 +4,9 @@
   "description": "CLI tool that merges JSON translations",
   "main": "main.js",
   "bin": "cli.js",
-  "scripts": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vladimirbelyayev/json-translation-merge.git"
